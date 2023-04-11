@@ -31,7 +31,7 @@ export default function Root() {
             console.log("Record limit: " + recordLimit)
             setShowLoader(true)
             setSearchResults([])
-            // TODO: Change this to a proper API call
+
             const result = await fetch('/api/search', {
                 method: 'POST',
                 headers: {
@@ -45,7 +45,10 @@ export default function Root() {
                     k: recordLimit
                 })
             })
+
             const data = await result.json()
+            if (data.error) throw new Error(data.error)
+
             setSearchResults(data.result)
         } catch (err) {
             console.error(err)

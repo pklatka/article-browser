@@ -5,6 +5,7 @@ const helmet = require("helmet");
 const cors = require('cors')
 
 const PORT = process.env.PORT || 3000;
+const PYTHON = process.env.PYTHON || 'python3.10';
 
 // Define middleware
 app.use(cors());
@@ -23,7 +24,7 @@ app.post('/api/search', async (req, res) => {
         const matrix_filename = `matrix${svd}${idf}`
 
         // Run search.py and return results
-        const pyProg = spawn('python3', ['./core/search.py', query, k, matrix_filename]);
+        const pyProg = spawn(PYTHON, ['./core/search.py', query, k, matrix_filename]);
 
         let receivedData = ""
         let errorData = "";
