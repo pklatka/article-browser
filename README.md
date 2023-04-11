@@ -9,7 +9,7 @@ English Wikipedia article search engine. Engine uses Singular Value Decompositio
 
 More about this method: Matrix Analysis and Applied Linear Algebra, Carl D. Mayer, SIAM, 2000. Singular Value Decomposition: Example 5.12.3 and Example 5.12.4
 
-This project was a part of the computational methods course at AGH UST. The project description (in Polish) is available [here](https://github.com/pklatka/computational-methods-course/tree/main/Lab%2006).
+This project was a part of the computational methods course at AGH UST. The project description (in Polish), as well as article pre-processing code, is available [here](https://github.com/pklatka/computational-methods-course/tree/main/Lab%2006).
 
 ## How to run
 
