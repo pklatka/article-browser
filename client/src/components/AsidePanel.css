@@ -1,0 +1,15 @@
+.aside-panel {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.aside-panel>.icon {
+    cursor: pointer;
+    user-select: none;
+    margin-left: 15px;
+}

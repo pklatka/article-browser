@@ -1,0 +1,114 @@
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    height: 130px;
+}
+
+section.results {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+
+section.loader {
+    width: 80%;
+    min-height: calc(100vh - 180px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    /* margin-top: 50px; */
+}
+
+
+.textinput {
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin-top: 10px;
+    width: 582px;
+    transition: .2s;
+    font-size: 16px;
+}
+
+.inputwrapper {
+    position: relative;
+}
+
+.inputbutton {
+    position: absolute;
+    width: 40.5px;
+    height: 40.5px;
+    top: 50%;
+    transform: translateY(-15.5px);
+    right: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 14px;
+}
+
+.textinput:focus,
+.textinput:hover {
+    /* border: 1px solid #1a73e8; */
+    box-shadow: 0px 0px 15px -6px rgba(66, 68, 90, 1);
+}
+
+.inputbutton:hover {
+    font-size: 17px;
+}
+
+div.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+div.header>.header-icon {
+    font-size: 35px;
+    margin-right: 12px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .textinput {
+        width: 90vw;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+    background-color: #eee;
+    /* z-index: 500; */
+}
+
+footer>a {
+    text-decoration: none;
+    color: black;
+}

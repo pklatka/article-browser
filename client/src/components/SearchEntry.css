@@ -1,0 +1,20 @@
+div.search-entry {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    /* border-bottom: 1px solid gray; */
+    width: 100%;
+}
+
+div.search-entry>* {
+    margin: 5px;
+}
+
+div.search-entry a {
+    color: #8ab4f7;
+    text-decoration: none;
+}
+
+div.search-entry a:hover {
+    text-decoration: underline;
+}
