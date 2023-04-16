@@ -42,9 +42,7 @@ def get_results_from_query_vector(query, k=10, matrix_filename="matrix"):
 
     # Sort probabilities
     probabilities = list(map(lambda x: (x[0], articles[x[1]]), filter(lambda x: not np.isnan(x[0]) and np.isfinite(
-        x[0]) and x[0] > 0, probabilities)))
-
-    probabilities.sort(key=lambda x: x[0], reverse=True)
+        x[0]) and x[0] > 0, sorted(probabilities, key=lambda x: x[0], reverse=True))))
 
     # Get top k results
     result = []
